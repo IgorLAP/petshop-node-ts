@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --mainColor: #a8a8fa;
+    --darkerMainColor: #8f8ff6;
+    --secondColor: #E5C349;
+    --darkerSecondColor: #c7a62e;
+    --whiteColor: #ffffff;
+    --blackColor: #000000;
+    --nMode: '';
+    --dmode: '';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--whiteColor);
+    transition: all ease .3s;
+}
+
+/* HEADER */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.firstNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+.firstNav a{
+    color: var(--mainColor);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+}
+.firstNav a:hover{
+    color: var(--darkerMainColor);
+}
+.firstNav .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.right .theme{
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+.right .theme a, .right .theme img{
+    width: 100%;
+    height: 100%;
+}
+.filter{
+    filter: invert(100%);
+}
+.sun, .moon{
+    outline: 0;
+    outline: 0;
+    border: 0;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+    display: none;
+    transition: all ease .3s;
+}
+.sun.active, .moon.active{
+    display: block;
+}
+form input{
+    height: 30px;
+    padding: 5px;
+    outline: 0;
+}
+form input[type="submit"]{
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color: var(--darkerMainColor);
+}
+.sectionNav{
+    background-color: var(--mainColor);
+}
+.sectionNav .container{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sectionNav .container a{
+    color: var(--whiteColor);
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px;
+}
+.sectionNav .container a.active, .sectionNav .container a:hover{
+    color: var(--whiteColor);
+    background-color: var(--darkerMainColor);
+    border-radius: 5px;
+}
+
+/* BANNER */
+.banner{
+    height: 320px;
+    background-image: url('../images/allanimals.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: var(--mainColor);
+    text-shadow: 1px 5px var(--secondColor);
+    text-transform: uppercase;
+    font-size: 35px;
+}
+h2{
+    color: var(--darkerMainColor);
+    padding: 20px;
+}
+
+/* MAIN CONTENT */
+main{
+    margin-top: 25px;
+    text-align: center;
+}
+.animalList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.animalItem{
+    width: 220px;
+    height: 320px;
+    text-align: left;
+    font-size: 15px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    border: 3px solid var(--darkerMainColor);
+}
+.animalItem img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.animalInfos{
+    padding: 10px;
+}
+.animalName{
+    font-weight: 700;
+}
+.animalColor, .sex{
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    color: var(--blackColor);
+    background-color: var(--mainColor);
+}
+footer a {
+    color: var(--blackColor);
+}
+footer img{
+    width: 25px;
+    height: auto;
+}
