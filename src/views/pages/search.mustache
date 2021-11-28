@@ -1,0 +1,22 @@
+{{>partials/header}}
+
+<main class="container">
+    <h2>Resultado</h2>
+    <div class="animalList">
+        {{#list}}
+        <div class="animalItem">
+            <img src="/images/{{image}}" alt="{{name}}">
+            <div class="animalInfos">
+                <div class="animalName">{{name}}</div>
+                <div class="animalColor">Cor: {{color}}</div>
+                <div class="sex">Genêro: {{sex}}</div>
+            </div>
+        </div>
+        {{/list}}
+    </div>
+    {{^list}}
+    <h2 class="searchNotFoundMsg">Animal não encontrado!</h2>
+    {{/list}}
+</main>
+
+{{>partials/footer}}
