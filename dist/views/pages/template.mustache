@@ -1,0 +1,25 @@
+{{>partials/header}}
+
+    
+    <div class="bannerSection">
+        <div class="banner" style="background-image: url('/images/{{banner.image}}');">
+            <h1>{{banner.title}}</h1>
+        </div>
+    </div>
+    <main class="container">
+        <h2>{{banner.title}} à disposição</h2>
+        <div class="animalList">
+            {{#list}}
+            <div class="animalItem">
+                <img src="/images/{{image}}" alt="{{name}}">
+                <div class="animalInfos">
+                    <div class="animalName">{{name}}</div>
+                    <div class="animalColor">Cor: {{color}}</div>
+                    <div class="sex">Genêro: {{sex}}</div>
+                </div>
+            </div>
+            {{/list}}
+        </div>
+    </main>
+
+{{>partials/footer}}

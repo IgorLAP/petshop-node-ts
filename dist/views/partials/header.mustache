@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IgorPetShop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/favicon.png" />
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="firstNav container">
+                <a href="/">PetShop</a>
+                <div class="right">
+                    <form method="GET" action="/search">
+                        <input type="search" name="q" id="name" value="{{name}}" placeholder="Procure por raça ou nome do animal">
+                        <input type="submit" value="Search">
+                    </form>
+                    <div class="theme">
+                        <button class="moon"><img src="images/moon.svg" alt=""></button>
+                        <button class="sun"><img src="images/sun.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionNav">
+                <div class="container">
+                    <a class="{{#all}}active{{/all}}" href="/">Todos</a>
+                    <a class="{{#dogs}}active{{/dogs}}" href="/dogs">Cachorros</a>
+                    <a class="{{#cats}}active{{/cats}}" href="/cats">Gatos</a>
+                    <a class="{{#fish}}active{{/fish}}" href="/fishes">Peixes</a>
+                </div>
+            </div>
+        </nav>
+    </header>
