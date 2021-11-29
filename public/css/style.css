@@ -212,6 +212,9 @@ footer img{
     .sectionNav .container a{
         font-size: 15px;
     }
+    .banner{
+        height: 220px;
+    }
     .animalList{
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -245,6 +248,9 @@ footer img{
     }
     .sectionNav .container a{
         font-size: 13px;
+    }
+    .banner{
+        height: 180px;
     }
     h1{
         font-size: 30px;

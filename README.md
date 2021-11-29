@@ -2,10 +2,7 @@
 Projetinho FullStack focado em assimilar conhecimentos de NodeJS e TypeScript
 
 ## Demonstração
-
-<p align="center">
- <img width="850" height="500" src="https://media4.giphy.com/media/x5sTn8NBxQjvTe6O4A/giphy.gif" />
-</p>
+<img src="https://media4.giphy.com/media/x5sTn8NBxQjvTe6O4A/giphy.gif" />
 
 ## Abra no navegador
 
